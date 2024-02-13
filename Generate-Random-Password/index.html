@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generate-Random-Password</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <div id="button-container">
+      <label>UpperCase Characters</label>
+      <button id="upperCaseBtn" onclick="upperChar()">OFF</button>
+      <label>LowerCase Characters</label>
+      <button id="lowerCaseBtn" onclick="lowerChar()">OFF</button>
+      <label>Numbers</label>
+      <button id="numbersBtn" onclick="numbers()">OFF</button>
+      <label>Symbol</label>
+      <button id="symbolBtn" onclick="symbols()">OFF</button>
+      <label>Generate</label>
+      <button id="Submit" onclick="generate()">Submit</button>
+    </div>
+  </main>
+  
+  <div id="display_password">
+    <div id="tooltip-password">
+      Password Generate
+    </div>  
+    Password
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
