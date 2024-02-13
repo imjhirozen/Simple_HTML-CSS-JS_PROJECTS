@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Clock</title>
+  
+
+  <style>
+    body{
+      background-image: url(Image/Space.jpg);
+      background-position: center;
+      background-size: fixed;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+    }
+
+    #container-clock {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #clock {
+      color: white;
+      font-size: 4rem;
+      font-family: monospace;
+      font-weight: bold;
+      text-align: center;
+      backdrop-filter: blur(5px);
+      background-color: hsl(0, 0, 100%, 5.1);
+      width: 70%;
+    }
+
+  </style>
+
+</head>
+<body>
+  <div id="container-clock">
+    <div id="clock">
+      00:00:00
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
