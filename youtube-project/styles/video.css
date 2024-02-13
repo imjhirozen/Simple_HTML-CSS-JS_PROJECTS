@@ -1,0 +1,96 @@
+
+.thumbnail {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.div-description-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+
+}
+
+.div-channel-picture{
+  width: 50px;
+  vertical-align: top;
+}
+
+.profile {
+  width: 50px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: left;
+  
+}
+
+.div-info {
+  margin-left: 10px;
+
+}
+
+.title,
+.name,
+.stats {
+  margin: 0 0 7px 0;
+  
+}
+
+.title {
+  line-height: 23px;
+}
+
+.name,
+.stats {
+  font-size: 14px;
+  
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+
+}
+
+@media (max-width: 1031px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+    
+  }
+}
+
+@media (min-width: 1300px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+  }
+}
+
+@media (min-width: 1600px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+  }
+}
+
+.thumbnail-row{
+  position: relative;
+  z-index: -1;
+}
+
+.time {
+  background-color: black;
+  color: white;
+  padding: 3px 7px;
+
+  font-size: 15px;
+  font-family: Arial;
+  border-radius: 2px;
+
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+
+}
