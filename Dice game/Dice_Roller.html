@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dice-Roller</title>
+
+  <style>
+
+    .grid {
+      display: flex;
+      height: 100vh;
+      flex-direction: column;
+      background-color: pink;
+      align-items: center;
+      justify-content: center;
+      row-gap: 30px;
+    }
+
+    #dice-images p {
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+    #dice-images img {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+
+    #result {
+      font-size: 1.5rem;
+      font-family: Arial;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="grid">
+    <div id="dice-inputs">
+      <label for="number-of-dice">Enter a number</label>
+      <input id="number-of-dice" type="number" min="1" max="6">
+      <button id="submit-btn" onclick="rollDice()">Submit</button>
+      <div id="result"></div>
+      <div id="total"></div>
+    </div>
+    <div id="dice-images"></div>
+  </div>
+
+  <script src="main.js"></script>
+  
+</body>
+
+</html>
